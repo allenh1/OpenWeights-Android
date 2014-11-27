@@ -204,9 +204,9 @@
    <widget class="QPushButton" name="dateSetting">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>110</x>
       <y>1110</y>
-      <width>311</width>
+      <width>851</width>
       <height>81</height>
      </rect>
     </property>

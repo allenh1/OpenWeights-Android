@@ -46,11 +46,14 @@ public:
 
     Q_SLOT void updateLog();
     Q_SLOT void showLog();
+    Q_SLOT void setDate(QDate);
+    Q_SLOT void getDate();
 
 private:
     Ui::MainWindow *ui;
     ShowStats * statsUi;
     DateSelector * dateUi;
+    QDate mostRecent;
 };
 
 #endif // MAINWINDOW_H

@@ -3,7 +3,8 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    mostRecent(QDate::currentDate())
 {
     ui->setupUi(this);
     ui->bicepCurl->show();
@@ -18,6 +19,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(ui->logButton, SIGNAL(released()), this, SLOT(updateLog()));
     connect(ui->viewLog, SIGNAL(released()), this, SLOT(showLog()));
+    connect(ui->dateSetting, SIGNAL(released()), this, SLOT(getDate()));
+    connect(dateUi, SIGNAL(sendDate(QDate)), this, SLOT(setDate(QDate)));
 }
 
 MainWindow::~MainWindow()
@@ -33,6 +36,17 @@ void MainWindow::updateLog()
 
     ui->bicepCurl->clear(); ui->chestPress->clear(); ui->tricepCurl->clear();
     ui->chestLabel->setText("Reps"); ui->bicepLabel->setText("Reps"); ui->tricepLabel->setText("Reps");
+}
+
+void MainWindow::getDate()
+{
+    dateUi->show();
+}
+
+void MainWindow::setDate(QDate received)
+{
+    mostRecent = received;
+    ui->dateSetting->setText(mostRecent.toString());
 }
 
 void MainWindow::showLog()

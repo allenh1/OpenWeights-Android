@@ -18,4 +18,5 @@ void DateSelector::prepareSend()
 {
     QDate toSend = ui->calendarWidget->selectedDate();
     Q_EMIT sendDate(toSend);
+    this->hide();
 }
