@@ -13,27 +13,37 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QTableWidget" name="logTable">
+  <widget class="QPushButton" name="backButton">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>20</y>
-     <width>821</width>
-     <height>1701</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>18</x>
-     <y>1766</y>
+     <x>30</x>
+     <y>1560</y>
      <width>261</width>
      <height>111</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="logEditor">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>1051</width>
+     <height>1511</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
   </widget>
  </widget>

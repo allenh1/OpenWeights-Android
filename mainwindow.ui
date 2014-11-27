@@ -186,10 +186,10 @@
    <widget class="QPushButton" name="viewLog">
     <property name="geometry">
      <rect>
-      <x>800</x>
-      <y>1560</y>
-      <width>261</width>
-      <height>101</height>
+      <x>640</x>
+      <y>1490</y>
+      <width>421</width>
+      <height>171</height>
      </rect>
     </property>
     <property name="font">

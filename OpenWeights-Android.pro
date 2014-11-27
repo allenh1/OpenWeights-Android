@@ -19,7 +19,8 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     showStats.h \
-    DateSelector.h
+    DateSelector.h \
+    LogStruct.h
 
 FORMS    += mainwindow.ui \
     ShowStats.ui \
